@@ -32,7 +32,8 @@ namespace Inheritance
         public string LastName { get; set; }
     }
 
-    class Customer : Person
+
+    class Customer : Person 
     {
         public string City { get; set; }
     }
