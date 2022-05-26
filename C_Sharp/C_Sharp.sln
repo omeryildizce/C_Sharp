@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiersDemo", "Acce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructors", "Constructors\Constructors.csproj", "{0FA62D1F-1145-4D39-8500-AA2636E6B88D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceAndValue", "ReferenceAndValue\ReferenceAndValue.csproj", "{EA78527D-3697-4AFD-8C37-9EE880816E05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{0FA62D1F-1145-4D39-8500-AA2636E6B88D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FA62D1F-1145-4D39-8500-AA2636E6B88D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FA62D1F-1145-4D39-8500-AA2636E6B88D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA78527D-3697-4AFD-8C37-9EE880816E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA78527D-3697-4AFD-8C37-9EE880816E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA78527D-3697-4AFD-8C37-9EE880816E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA78527D-3697-4AFD-8C37-9EE880816E05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
