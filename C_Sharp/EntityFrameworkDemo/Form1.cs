@@ -40,6 +40,15 @@ namespace EntityFrameworkDemo
         {
             dgwProducts.DataSource = _productDal.GetAll();
         }
+        private void SearchProducts(string key)
+        {
+
+            //dgwProducts.DataSource = _productDal.GetAll().Where(p => p.Name.ToLower().Contains(key)).ToList();
+            dgwProducts.DataSource = _productDal.GetByName(key);
+
+
+            dgwProducts.ClearSelection();
+        }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -90,6 +99,11 @@ namespace EntityFrameworkDemo
 
         }
 
+        private void tbxSearch_TextChanged(object sender, EventArgs e)
+        {
 
+            SearchProducts(tbxSearch.Text.ToLower());
+            
+        }
     }
 }

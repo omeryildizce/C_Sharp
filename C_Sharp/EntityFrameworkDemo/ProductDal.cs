@@ -14,11 +14,47 @@ namespace EntityFrameworkDemo
             //  using görev bittikten sonra belleği temizler
             using (ETrade_CsharpContext context = new ETrade_CsharpContext())
             {
-                return  context.Products.ToList();
+                return context.Products.ToList();
+            }
+
+        }
+        public List<Product> GetByName(string key)
+        {
+            //  using görev bittikten sonra belleği temizler
+            using (ETrade_CsharpContext context = new ETrade_CsharpContext())
+            {
+                return context.Products.Where(p => p.Name.ToLower().Contains(key)).ToList();
+            }
+
+        }
+        public List<Product> GetByUnitPrice(decimal price)
+        {
+            //  using görev bittikten sonra belleği temizler
+            using (ETrade_CsharpContext context = new ETrade_CsharpContext())
+            {
+                return context.Products.Where(p => p.UnitPrice >= price).ToList();
+            }
+
+        }
+        public List<Product> GetByUnitPrice(decimal min, decimal max)
+        {
+            //  using görev bittikten sonra belleği temizler
+            using (ETrade_CsharpContext context = new ETrade_CsharpContext())
+            {
+                return context.Products.Where(p => p.UnitPrice >= min && p.UnitPrice <= max).ToList();
             }
 
         }
 
+        public Product GetById(int id)
+        {
+            //  using görev bittikten sonra belleği temizler
+            using (ETrade_CsharpContext context = new ETrade_CsharpContext())
+            {
+                return context.Products.FirstOrDefault(p =>p.Id == id);
+            }
+
+        }
         public void Add(Product product)
         {
             using (ETrade_CsharpContext context = new ETrade_CsharpContext())
