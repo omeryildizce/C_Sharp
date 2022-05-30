@@ -15,11 +15,11 @@ namespace Northwind.Business.DependencyResolvers.Ninject
     {
         public override void Load()
         {
-            Bind<IProductService>().To<ProductManager>();
-            Bind<IProductDal>().To<EfProductDal>();
+            Bind<IProductService>().To<ProductManager>().InSingletonScope();
+            Bind<IProductDal>().To<EfProductDal>().InSingletonScope();
 
-            Bind<ICategoryService>().To<CategoryManager>();
-            Bind<ICategoryDal>().To<EfCategoryDal>();
+            Bind<ICategoryService>().To<CategoryManager>().InSingletonScope();
+            Bind<ICategoryDal>().To<EfCategoryDal>().InSingletonScope();
 
         }
     }
