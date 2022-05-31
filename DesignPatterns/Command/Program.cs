@@ -16,7 +16,7 @@ namespace Command
             stockCotroller.TakeOrder(sellStock);
             stockCotroller.TakeOrder(buyStock);
 
-            stockCotroller.PlaceOrders();
+            stockCotroller.PlaceOrders();   
         }
     }
 
