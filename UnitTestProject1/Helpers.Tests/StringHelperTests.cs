@@ -14,8 +14,8 @@ namespace Helpers.Tests
         public void Girilen_ifadenin_basindaki_ve_sonundaki_bosluklar_silinmelidir()
         {
             // Arange 
-            var ifade = "    Ömer         Yıldız   ";
-            var beklenen = " Ömer Yıldız";
+            var ifade = "    Ömer Yıldız   ";
+            var beklenen = "Ömer Yıldız";
 
             //Act
             var gerceklesen = StringHelper.FazlaBosluklariSil(ifade);
